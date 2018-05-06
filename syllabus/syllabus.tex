@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\usepackage{longtable}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Helvetica Neue, BoldItalicFont = Helvetica Neue Medium Italic, BoldFont = Helvetica Neue Medium]{Helvetica Neue Light} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+\usepackage[margin=3cm]{geometry}
+%\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+\addtolength{\voffset}{0cm}
+\addtolength{\textheight}{3cm}
+
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{array}
+\newcolumntype{C}{>{\centering\arraybackslash}m{1.7cm}}
+\newcolumntype{S}{>{\centering\arraybackslash}m{1.2cm}}
+\newcolumntype{B}{>{\centering\arraybackslash}m{3cm}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}m{13cm}}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}m{15cm}}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Introduction to Programming}\par}
+\rule{\textwidth}{0.4pt}
+%\par{\centering University of Luxembourg, 6 rue Richard Coudenhove-Kalergi L-1359 Luxembourg\par}
+%\vspace*{-0.5ex}
+%\section{Personal Data}
+\begin{center}
+\begin{tabular}{r|l}
+\textbf{Instructor} & Andrew Yarmola (\href{mailto:andrew.yarmola@uni.lu}{andrew.yarmola@uni.lu})\\
+\textbf{Course Schedule} & Wednesday 14h00 - 15h30 Campus Kirchberg B21\\
+\textbf{Course Website} &\href{https://sites.google.com/site/andrewyarmola/itp-uni-lux}{sites.google.com/site/andrewyarmola/itp-uni-lux}\\
+\textbf{Office Hours} & Thursday 16h00 - 17h00 Campus Kirchberg G103 and by appointment \\
+%\textbf{Citizenship} & United States of America, Russian Federation\\
+%\textbf{Languages} & English, Russian, some French\\
+\end{tabular}
+\end{center}
+%\vspace*{-0.5ex}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Overview}
+
+The goal of this course is to provide an introduction to programming by focusing on practical tools, common practices and mathematical experiments. We will work almost entirely with the Python programing language. Python is a great general purpose language for scientific computing and fast prototyping. Additionally, we will learn how to use the git version control system. At the end of the course, students should be able to create and manage a small software project for scientific computing.
+
+Along with basic programming skills and workflow, I hope we will be able to discuss some of the following topics: recursion, regular expressions, sorting algorithms, solving ODEs, trees, graph traversals and planarity, data manipulation and visualizations, machine learning and neural networks.
+
+\section{Prerequisites}
+
+No previous knowledge of computer programing is assumed. However, a good knowledge college level mathematics is required. Access to a personal computer for homework assignments and collaborative work is also necessary.
+
+\section{Software and Text} 
+
+We will be working with Python 3.5 as part of the Anaconda distribution and the git version control system. You can find the links to download the necessary software below. You are free to use any other distribution of Python, but please try to resolve any compatibility issues yourself.
+
+\begin{itemize}
+\item Anaconda can be found at \href{https://www.continuum.io/downloads}{continuum.io/downloads}.
+\vspace*{-0.5ex}
+\item git version control software can be found at \href{https://git-scm.com/downloads}{git-scm.com/downloads}.
+\vspace*{-0.5ex}
+\item other software we may use will be announced in class and on the website.
+\vspace*{-0.5ex}
+\end{itemize}
+
+Our main reference for this course will be the SciPy Lecture Notes found at \href{http://www.scipy-lectures.org}{scipy-lectures.org}. However, much of the material will be presented only in lecture.
+
+You can also find many other resources for learning Python online. In particular, there is a French language text by G\'{e}rard Swinnen that students may find useful at \href{http://inforef.be/swi/download/apprendre_python3_5.pdf}{inforef.be/swi/python.htm}. Additionally, there is a great list of open access Python texts found at \href{http://pythonbooks.revolunet.com}{pythonbooks.revolunet.com}.
+
+\section{Grading} 
+
+The course will consist of weekly homework assignments, 2 (or 3) coding projects, and one final project. Homework and projects will be at first submitted via email and later using a git repository. You will collaborate on projects with other students in groups of two or three. For homework assignments, feel free to discuss the problems with other students, but the submitted work must be your own writing and code.
+\begin{center}
+\begin{tabular}{r|l}
+50 \% & weekly homework assignments \\
+30 \% & 2 (or 3) coding projects\\
+25 \% & final project\\
+\end{tabular}
+\end{center}
+
+
+\end{document}
